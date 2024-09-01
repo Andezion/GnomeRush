@@ -12,6 +12,9 @@ There is my little project, where I've tried to use all abilities of SDL framewo
 ## Gameplay
 ---
 ## Inspiration
+- Crawly The Gnome
+- Stopiaż z Bałut
+- Project Dupa
 ---
 ## Technologies and features
 ---
