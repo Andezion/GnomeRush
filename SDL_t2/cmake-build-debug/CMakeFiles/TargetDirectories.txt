@@ -1,0 +1,3 @@
+C:/Users/vdoro/CLionProjects/SDL_t2/cmake-build-debug/CMakeFiles/SDL_t2.dir
+C:/Users/vdoro/CLionProjects/SDL_t2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vdoro/CLionProjects/SDL_t2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
