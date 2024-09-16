@@ -33,6 +33,7 @@ https://github.com/Andezion/GnomeRush/assets/641ad646-5dec-4b54-a93c-bf9bcca93e5
 - If you want to end your game you will see something like that
   
 https://github.com/Andezion/GnomeRush/assets/b50f2018-39f5-488e-b810-cde454b764c0
+
 ---
 ## Inspiration
 - Crawly The Gnome
