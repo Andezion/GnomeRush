@@ -12,7 +12,21 @@ After many hours spent reading The Hobbit, The Witcher and Lord of the Rings, I 
 I wrote the game in pure C, using SDL, based on the base. Music, graphics, plot and so on - all my own!
 ---
 ## Gameplay
-- Will be there very soon!
+Now I will show you what you can do in my game
+
+- There you can read some info about the game, sadly at this point I don't add pretty much to read, but it will appear in the nearest future!
+https://github.com/user-attachments/assets/e25fb870-4614-41b1-ac73-63d7981098cb
+
+- There you can try to play for the wizard! I still don't add some features and gameplays moment, but at least you can test some of them!
+https://github.com/user-attachments/assets/9c4b5083-9af3-4b22-b81a-de36cf62488c
+https://github.com/user-attachments/assets/9cb022f7-0d73-4a2f-920e-d81195b7ed90
+
+- And there you can try yourself as a knight!
+https://github.com/user-attachments/assets/f4ab9419-9439-42c0-92da-b556da106dc0
+https://github.com/user-attachments/assets/641ad646-5dec-4b54-a93c-bf9bcca93e51
+
+- If you want to end your game you will see something like that
+https://github.com/user-attachments/assets/b50f2018-39f5-488e-b810-cde454b764c0
 ---
 ## Inspiration
 - Crawly The Gnome
