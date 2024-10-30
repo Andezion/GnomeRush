@@ -1,0 +1,26 @@
+# ninja log v5
+2	171	7419682585848018	build.ninja	cb0664e16f1a515f
+13	165	7419682588262404	CMakeFiles/Library.dir/source/Rent.cpp.obj	1ea9d3bf7d3ac2a3
+1	320	7419682589627842	CMakeFiles/Library.dir/source/RentManager.cpp.obj	810a458925bbe6c1
+321	710	7419682591092940	CMakeFiles/Library.dir/source/RenterType.cpp.obj	8520ae4bc8d1eff4
+9	715	7419682591591271	CMakeFiles/Library.dir/source/Repository.cpp.obj	664c4dbca9c04572
+6	716	7419682591700908	CMakeFiles/Library.dir/source/BookManager.cpp.obj	7c4347eb9fbdbcbe
+3	720	7419682593484931	CMakeFiles/Library.dir/source/RenterManager.cpp.obj	edb73e2aa8a5df96
+710	1076	7419682595187044	CMakeFiles/Library.dir/source/Renter.cpp.obj	4b9f46e921871bd8
+18	1385	7419682600479334	CMakeFiles/Library.dir/source/Book.cpp.obj	da638feb0d45b476
+165	1435	7419682600977677	CMakeFiles/Library.dir/main.cpp.obj	3299609d78aa625c
+1435	1703	7419682603628706	Library.exe	681a5a82d05fefb9
+3	532	7419682842223236	CMakeFiles/Library.dir/source/Book.cpp.obj	da638feb0d45b476
+533	646	7419682843321836	Library.exe	681a5a82d05fefb9
+7	541	7419695922763903	CMakeFiles/Library.dir/main.cpp.obj	3299609d78aa625c
+3	545	7419695922803793	CMakeFiles/Library.dir/source/Book.cpp.obj	da638feb0d45b476
+545	653	7419695923861510	Library.exe	681a5a82d05fefb9
+2	510	7419696523947977	CMakeFiles/Library.dir/source/Book.cpp.obj	da638feb0d45b476
+6	568	7419696524537275	CMakeFiles/Library.dir/main.cpp.obj	3299609d78aa625c
+568	671	7419696525543954	Library.exe	681a5a82d05fefb9
+4	495	7419697079845771	CMakeFiles/Library.dir/source/Book.cpp.obj	da638feb0d45b476
+10	552	7419697080404673	CMakeFiles/Library.dir/main.cpp.obj	3299609d78aa625c
+552	647	7419697081341608	Library.exe	681a5a82d05fefb9
+4	1348	7419697822687358	CMakeFiles/Library.dir/source/Book.cpp.obj	da638feb0d45b476
+10	1392	7419697824437256	CMakeFiles/Library.dir/main.cpp.obj	3299609d78aa625c
+1392	1593	7419697826490050	Library.exe	681a5a82d05fefb9

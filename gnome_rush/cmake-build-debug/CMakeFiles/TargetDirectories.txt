@@ -1,0 +1,3 @@
+C:/Users/vdoro/CLionProjects/gnome_rush/cmake-build-debug/CMakeFiles/gnome_rush.dir
+C:/Users/vdoro/CLionProjects/gnome_rush/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vdoro/CLionProjects/gnome_rush/cmake-build-debug/CMakeFiles/rebuild_cache.dir

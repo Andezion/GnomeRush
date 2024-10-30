@@ -1,0 +1,15 @@
+# ninja log v5
+3	90	7191104081982007	CMakeFiles/Binary.dir/main.c.obj	e374a6d2f62da3b9
+90	189	7191104082942029	Binary.exe	5c86a037588040b5
+3	237	7195307948892360	CMakeFiles/Binary.dir/main.c.obj	e374a6d2f62da3b9
+11	238	7195307948892360	CMakeFiles/Binary.dir/binary.c.obj	5b4a3eb8d7a3c459
+238	500	7195307951505853	Binary.exe	ad1d400b3ad33e5
+2	106	7195308226220765	CMakeFiles/Binary.dir/main.c.obj	e374a6d2f62da3b9
+107	229	7195308227396829	Binary.exe	ad1d400b3ad33e5
+1	96	7195308416404253	CMakeFiles/Binary.dir/main.c.obj	e374a6d2f62da3b9
+97	203	7195308417440779	Binary.exe	ad1d400b3ad33e5
+2	244	7197514197114942	CMakeFiles/Binary.dir/main.c.obj	e374a6d2f62da3b9
+8	245	7197514197114942	CMakeFiles/Binary.dir/binary.c.obj	5b4a3eb8d7a3c459
+245	536	7197514199975157	Binary.exe	ad1d400b3ad33e5
+2	225	7198656436127426	CMakeFiles/Binary.dir/main.c.obj	e374a6d2f62da3b9
+226	526	7198656439094597	Binary.exe	ad1d400b3ad33e5

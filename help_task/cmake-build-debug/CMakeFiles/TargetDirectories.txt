@@ -1,0 +1,3 @@
+C:/Users/vdoro/CLionProjects/help_task/cmake-build-debug/CMakeFiles/help_task.dir
+C:/Users/vdoro/CLionProjects/help_task/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vdoro/CLionProjects/help_task/cmake-build-debug/CMakeFiles/rebuild_cache.dir

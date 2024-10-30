@@ -12,7 +12,7 @@ void draw_text(SDL_Renderer *renderer, const char *text, TTF_Font *font, SDL_Col
 void draw_menu(SDL_Renderer *renderer, TTF_Font *font, int table[50][30]);
 void draw_lose(SDL_Renderer *renderer, TTF_Font *font, int table[50][30]);
 void draw_pick(SDL_Renderer *renderer, TTF_Font *font, int table[50][30], int pick);
-void draw_wiki(SDL_Renderer *renderer, TTF_Font *font, int table[50][30]);
+void draw_wiki(SDL_Renderer *renderer, TTF_Font *font, int table[50][30], int where);
 
 void draw_back(SDL_Renderer *renderer, int table[50][30], int type);
 int set_background(SDL_Renderer *renderer, int table[100][60]);

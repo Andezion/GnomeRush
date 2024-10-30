@@ -1,0 +1,3 @@
+C:/Users/vdoro/CLionProjects/try/cmake-build-debug/CMakeFiles/try.dir
+C:/Users/vdoro/CLionProjects/try/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vdoro/CLionProjects/try/cmake-build-debug/CMakeFiles/rebuild_cache.dir

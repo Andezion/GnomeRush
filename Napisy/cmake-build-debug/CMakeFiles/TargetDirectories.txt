@@ -1,0 +1,3 @@
+C:/Users/vdoro/CLionProjects/Napisy/cmake-build-debug/CMakeFiles/Napisy.dir
+C:/Users/vdoro/CLionProjects/Napisy/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vdoro/CLionProjects/Napisy/cmake-build-debug/CMakeFiles/rebuild_cache.dir

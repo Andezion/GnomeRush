@@ -390,11 +390,13 @@ void draw_pick(SDL_Renderer *renderer, TTF_Font *font, int table[50][30], int pi
 
     if(pick == 1)
     {
+        draw_text(renderer, "Knight", font, textColor, 450, 530);
         SDL_Rect pers1 = {420, 250, 170, 170};
         SDL_RenderCopy(renderer, standing_knight_type1[move_pers1 % 7], NULL, &pers1);
     }
     else if(pick == 0)
     {
+        draw_text(renderer, "Wizard", font, textColor, 450, 530);
         SDL_Rect pers2 = {420, 250, 170, 170};
         SDL_RenderCopy(renderer, wizard1[move_pers2 % 6], NULL, &pers2);
     }
@@ -414,6 +416,23 @@ void draw_pick(SDL_Renderer *renderer, TTF_Font *font, int table[50][30], int pi
         return;
     }
 
+    if(pick == 1)
+    {
+        draw_text(renderer, "Damage - 10", font1, textColor, 50, 120);
+        draw_text(renderer, "Stamina - 100", font1, textColor, 50, 150);
+        draw_text(renderer, "W S A D to walk", font1, textColor, 800, 120);
+        draw_text(renderer, "Left click to hit", font1, textColor, 800, 150);
+        draw_text(renderer, "R to use shield", font1, textColor, 800, 180);
+    }
+    else
+    {
+        draw_text(renderer, "Damage - 5", font1, textColor, 50, 120);
+        draw_text(renderer, "Mana - 100", font1, textColor, 50, 150);
+        draw_text(renderer, "W S A D to walk", font1, textColor, 800, 120);
+        draw_text(renderer, "Left click to hit", font1, textColor, 800, 150);
+        draw_text(renderer, "T to use rage", font1, textColor, 800, 180);
+    }
+
     draw_text(renderer, "Pick your fighter!", font, textColor, 330, 60);
     draw_text(renderer, "Enter  m", font1, textColor, 820, 470);
     draw_text(renderer, "to continue!", font1, textColor, 820 , 500);
@@ -421,13 +440,9 @@ void draw_pick(SDL_Renderer *renderer, TTF_Font *font, int table[50][30], int pi
     draw_text(renderer, "to test!", font1, textColor, 70, 500);
 }
 
-void draw_wiki(SDL_Renderer *renderer, TTF_Font *font, int table[50][30])
+void draw_wiki(SDL_Renderer *renderer, TTF_Font *font, int table[50][30], int where)
 {
-    SDL_Color textColor = {255, 255, 255, 255};
-
     draw_back(renderer, table, 4);
-
-    draw_text(renderer, "There you can read about game!", font, textColor, 210, 60);
 }
 
 int is_intersects(SDL_Rect rect1, SDL_Rect rect2, int pick)

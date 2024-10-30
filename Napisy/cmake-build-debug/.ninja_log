@@ -1,0 +1,20 @@
+# ninja log v5
+4	224	7465645833334009	CMakeFiles/Napisy.dir/main.c.obj	e8c80a9c032ada77
+2	93	7460547556154105	CMakeFiles/Napisy.dir/vector_utils.c.obj	4569359c17b2c2fb
+225	350	7465645834559085	Napisy.exe	2c26a7fafa655b29
+2	65	7345633246933871	CMakeFiles/Napisy.dir/helper.c.obj	4a15b610e10a1486
+16	304	7383346420211603	CMakeFiles/Napisy.dir/comparators.c.obj	224bb45b4df7649f
+4	91	7465646533764071	CMakeFiles/Napisy.dir/main.c.obj	e8c80a9c032ada77
+92	196	7465646534771682	Napisy.exe	2c26a7fafa655b29
+2	95	7465648578903479	CMakeFiles/Napisy.dir/main.c.obj	e8c80a9c032ada77
+95	229	7465648580239305	Napisy.exe	2c26a7fafa655b29
+2	162	7465651954631482	CMakeFiles/Napisy.dir/main.c.obj	e8c80a9c032ada77
+162	260	7465651955598269	Napisy.exe	2c26a7fafa655b29
+3	88	7465652153961574	CMakeFiles/Napisy.dir/main.c.obj	e8c80a9c032ada77
+89	191	7465652154938422	Napisy.exe	2c26a7fafa655b29
+2	90	7465654341883489	CMakeFiles/Napisy.dir/main.c.obj	e8c80a9c032ada77
+90	228	7465654343246228	Napisy.exe	2c26a7fafa655b29
+2	117	7465837937656872	CMakeFiles/Napisy.dir/main.c.obj	e8c80a9c032ada77
+118	358	7465837940041014	Napisy.exe	2c26a7fafa655b29
+2	86	7465839709873409	CMakeFiles/Napisy.dir/main.c.obj	e8c80a9c032ada77
+87	177	7465839710754727	Napisy.exe	2c26a7fafa655b29

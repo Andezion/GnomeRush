@@ -1,0 +1,3 @@
+C:/Users/vdoro/CLionProjects/TestMap/cmake-build-debug/CMakeFiles/TestMap.dir
+C:/Users/vdoro/CLionProjects/TestMap/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vdoro/CLionProjects/TestMap/cmake-build-debug/CMakeFiles/rebuild_cache.dir

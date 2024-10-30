@@ -1,0 +1,9 @@
+# ninja log v5
+2	238	7411959164096924	CMakeFiles/crossword.dir/main.c.obj	238bc3465f6600da
+2	133	7407689380436403	CMakeFiles/crossword.dir/board.c.obj	de9f3dc54ce0e927
+110	222	7407762801985899	crossword.exe	dcb9c7df43167391
+9	121	7389531639161859	CMakeFiles/crossword.dir/comparators.c.obj	8a1b9ae3aed12cf9
+19	233	7411959164096924	CMakeFiles/crossword.dir/doubly_linked_list.c.obj	2af04606903f7c00
+6	102	7407698833805788	CMakeFiles/crossword.dir/stack.c.obj	cc091551b06afe99
+14	236	7411959164136799	CMakeFiles/crossword.dir/linked_list.c.obj	6b2ae451532b508c
+2	244	7411959589645022	crossword.exe	e8ce65bed4c33109

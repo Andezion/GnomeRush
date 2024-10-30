@@ -76,8 +76,20 @@ int main(int argc, char* argv[])
     Mix_Music *hit2_knight = Mix_LoadMUS("sword2.mp3");
     Mix_Music *magic_hit = Mix_LoadMUS("magic.mp3");
 
-    SDL_Surface *zelie = SDL_LoadBMP("zel_dur.bmp");
-    SDL_Texture *zel1 = SDL_CreateTextureFromSurface(renderer, zelie);
+    SDL_Surface *zelie1 = SDL_LoadBMP("zel_dur.bmp");
+    SDL_Texture *zel1 = SDL_CreateTextureFromSurface(renderer, zelie1);
+
+    SDL_Surface *zelie2 = SDL_LoadBMP("zel_heal.bmp");
+    SDL_Texture *zel2 = SDL_CreateTextureFromSurface(renderer, zelie2);
+
+    SDL_Surface *zelie3 = SDL_LoadBMP("zel_mana.bmp");
+    SDL_Texture *zel3 = SDL_CreateTextureFromSurface(renderer, zelie3);
+
+    SDL_Surface *zelie4 = SDL_LoadBMP("zel_rage.bmp");
+    SDL_Texture *zel4 = SDL_CreateTextureFromSurface(renderer, zelie4);
+
+    SDL_Surface *zelie5 = SDL_LoadBMP("zel_what.bmp");
+    SDL_Texture *zel5 = SDL_CreateTextureFromSurface(renderer, zelie5);
 
     SDL_Texture *hitting_type1[7];
     const char *hitting_type_1[7] = {"hit2.bmp","hit3.bmp","hit4.bmp","hit5.bmp","hit6.bmp","hit7.bmp","hit8.bmp"};
@@ -525,12 +537,26 @@ int main(int argc, char* argv[])
     SDL_Surface *hitter = SDL_LoadBMP("mage_hit.bmp");
     SDL_Texture *hitter_mage = SDL_CreateTextureFromSurface(renderer, hitter);
 
+    SDL_Surface *text = SDL_LoadBMP("letter.bmp");
+    SDL_Texture *main_text = SDL_CreateTextureFromSurface(renderer, text);
+
     GameState state = MENU;
     Mix_PlayMusic(start_screen, -1);
+
+    SDL_Color textColor = {255, 255, 255, 255};
 
     int point1 = 100;
     int point2 = 100;
     int point3 = 100;
+
+    int library_begin = 100;
+    int krok_of_library = 0;
+
+    SDL_Rect zel_for1 = {800, 10, 25, 25};
+    SDL_Rect zel_for2 = {830, 10, 25, 25};
+    SDL_Rect zel_for3 = {860, 10, 25, 25};
+    SDL_Rect zel_for4 = {890, 10, 25, 25};
+    SDL_Rect zel_for5 = {920, 10, 25, 25};
 
     while(is_play)
     {
@@ -539,7 +565,6 @@ int main(int argc, char* argv[])
         SDL_Rect stamina = {20, 45, point3, 10};
 
         SDL_Rect rectangle = {begin_place_x, begin_place_y, 100, 100};
-        SDL_Rect zel_for = {300, begin_place_y + 50, 25, 25};
         while(SDL_PollEvent(&event))
         {
             if(event.type == SDL_QUIT || event.key.keysym.sym == SDLK_q) // окончить игру
@@ -584,7 +609,7 @@ int main(int argc, char* argv[])
 
             if(pick == 0)
             {
-                if(event.button.button == SDL_BUTTON_LEFT)
+                if(event.button.button == SDL_BUTTON_LEFT || event.key.keysym.sym == SDLK_b)
                 {
                     if(point2 > 10)
                     {
@@ -665,26 +690,31 @@ int main(int argc, char* argv[])
                     custom_run = (custom_run + 1) % 8;
                     begin_place_x = begin_place_x - 10;
                 }
-                else if(event.button.button == SDL_BUTTON_LEFT)
+                else if(event.button.button == SDL_BUTTON_LEFT || event.key.keysym.sym == SDLK_b)
                 {
-                    helper_for_hitting_knight = 1;
-                    is_walking_knight = 0;
-                    is_defence_knight = 0;
-                    is_hitting_knight = 1;
-
-                    if(what_part == 0)
+                    if(point3 > 10)
                     {
-                        SDL_Rect rectangle1 = {begin_place_x, begin_place_y - 40, 160, 140};
-                        SDL_RenderCopy(renderer, hitting_type1[custom_hit % 7], NULL, &rectangle1);
+                        helper_for_hitting_knight = 1;
+                        is_walking_knight = 0;
+                        is_defence_knight = 0;
+                        is_hitting_knight = 1;
 
-                        custom_hit = (custom_hit + 1) % 7;
-                    }
-                    else
-                    {
-                        SDL_Rect rectangle1 = {begin_place_x - 60, begin_place_y - 40, 160, 140};
-                        SDL_RenderCopy(renderer, hitting_type2[custom_hit % 7], NULL, &rectangle1);
+                        point3 = point3 - 10;
 
-                        custom_hit = (custom_hit + 1) % 7;
+                        if(what_part == 0)
+                        {
+                            SDL_Rect rectangle1 = {begin_place_x, begin_place_y - 40, 160, 140};
+                            SDL_RenderCopy(renderer, hitting_type1[custom_hit % 7], NULL, &rectangle1);
+
+                            custom_hit = (custom_hit + 1) % 7;
+                        }
+                        else
+                        {
+                            SDL_Rect rectangle1 = {begin_place_x - 60, begin_place_y - 40, 160, 140};
+                            SDL_RenderCopy(renderer, hitting_type2[custom_hit % 7], NULL, &rectangle1);
+
+                            custom_hit = (custom_hit + 1) % 7;
+                        }
                     }
                 }
                 else if(event.key.keysym.sym == SDLK_r)
@@ -693,6 +723,8 @@ int main(int argc, char* argv[])
                     is_defence_knight = 1;
                     is_walking_knight = 0;
                     is_hitting_knight = 0;
+
+                    point3 = point3 - 10;
 
                     if(what_part == 0)
                     {
@@ -713,6 +745,7 @@ int main(int argc, char* argv[])
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
         SDL_RenderClear(renderer);
 
+        int where = -1;
         switch (state)
         {
             case MENU:
@@ -730,12 +763,31 @@ int main(int argc, char* argv[])
                 draw_pick(renderer, font, table1, pick);
                 break;
             case WIKI:
-                draw_wiki(renderer, font, table1);
+                draw_wiki(renderer, font, table1, where);
+                draw_text(renderer, "There you can read about game!", font, textColor, 210, 60);
+
+                if(event.key.keysym.sym == SDLK_DOWN)
+                {
+                    if(library_begin + krok_of_library < 100)
+                    {
+                        krok_of_library = krok_of_library + 10;
+                    }
+                }
+                if(event.key.keysym.sym == SDLK_UP)
+                {
+                    if(library_begin + krok_of_library + 1000 > 550)
+                    {
+                        krok_of_library = krok_of_library - 10;
+                    }
+                }
+
+                SDL_Rect frame_for_main_text = {75, library_begin + krok_of_library, 850, 1000};
+                SDL_RenderCopy(renderer, main_text, NULL, &frame_for_main_text);
+
                 break;
             case TEST:
                 set_background(renderer, table);
 
-                SDL_Color textColor = {255, 255, 255, 255};
                 if(pick == 0)
                 {
                     draw_text(renderer, "Wizard!", font, textColor, 450, 60);
@@ -789,6 +841,11 @@ int main(int argc, char* argv[])
                     }
                     else
                     {
+                        if(point3 < 100)
+                        {
+                            point3++;
+                        }
+
                         if(what_part == 0)
                         {
                             SDL_RenderCopy(renderer, standing_knight_type1[custom_fps % 7], NULL, &rectangle);
@@ -871,13 +928,25 @@ int main(int argc, char* argv[])
                     SDL_RenderCopy(renderer, hit[0], NULL, &rect);
                 }
 
-                SDL_RenderCopy(renderer, zel1, NULL, &zel_for);
+                SDL_RenderCopy(renderer, zel1, NULL, &zel_for1);
+                SDL_RenderCopy(renderer, zel2, NULL, &zel_for2);
+                SDL_RenderCopy(renderer, zel3, NULL, &zel_for3);
+                SDL_RenderCopy(renderer, zel4, NULL, &zel_for4);
+                SDL_RenderCopy(renderer, zel5, NULL, &zel_for5);
 
                 SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
                 SDL_RenderFillRect(renderer, &health);
 
-                SDL_SetRenderDrawColor(renderer, 0, 0, 255, 255);
-                SDL_RenderFillRect(renderer, &mana);
+                if(pick == 0)
+                {
+                    SDL_SetRenderDrawColor(renderer, 0, 0, 255, 255);
+                    SDL_RenderFillRect(renderer, &mana);
+                }
+                else
+                {
+                    SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
+                    SDL_RenderFillRect(renderer, &stamina);
+                }
 
                 body_fps = (body_fps + 1) % 4;
 

@@ -1,0 +1,7 @@
+# ninja log v5
+3	71	7379419178156760	CMakeFiles/Past6module.dir/main.c.obj	ab4362fa1410a31f
+10	226	7377697069271557	CMakeFiles/Past6module.dir/circular_buffer.c.obj	7a51395d7c83bb50
+87	173	7379419179154541	Past6module.exe	61af1e680a6a97d2
+6	96	7330866968595648	CMakeFiles/Past6module.dir/int_operations.c.obj	e452c17cf5399660
+18	195	7379418266853023	CMakeFiles/Past6module.dir/for_loop.c.obj	cdcb7e8cda4ef996
+9	87	7379419178326762	CMakeFiles/Past6module.dir/char_operations.c.obj	7e5a818f195d74be

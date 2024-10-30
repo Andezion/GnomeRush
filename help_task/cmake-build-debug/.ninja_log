@@ -1,0 +1,5 @@
+# ninja log v5
+3	238	7480972098770919	build.ninja	cbd0cceddf7ab009
+2	370	7443096205620602	CMakeFiles/help_task.dir/main.c.obj	7371dae76937742f
+371	472	7443096206624269	help_task.exe	b4bf18608d12b4c3
+4	93	7480972116584793	CMakeFiles/help_task.dir/main.c.obj	fb199d92885c2d3
