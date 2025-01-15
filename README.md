@@ -4,7 +4,8 @@ There is my little project, where I've tried to use all abilities of SDL framewo
 * [General info](#general-info)
 * [Gameplay](#gameplay)
 * [Inspiration](#inspiration)
-* [Technologies and features](#technologies-and-features)
+* [Technologies](#technologies)
+* [Features](#features)
 * [Setup](#setup)
 ---
 ## General info
@@ -40,7 +41,7 @@ https://github.com/Andezion/GnomeRush/assets/b50f2018-39f5-488e-b810-cde454b764c
 - Stopiaż z Bałut
 - Project Dupa
 ---
-## Technologies and features
+## Technologies
 Project created with:
 * SDL for most features
 * SDL_mixer for music
@@ -48,6 +49,10 @@ Project created with:
 * SDL_ttf for text usage
 * Photoshop for editing photoes
 * Tavern music and beer
+---
+## Features
+
+
 ---
 ## Setup
 Just download the recent release
