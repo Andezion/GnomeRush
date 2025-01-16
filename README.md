@@ -51,8 +51,59 @@ Project created with:
 * Tavern music and beer
 ---
 ## Features
+First we declare some important constants, window size and player position. 
 
+The interesting thing is that the level switching is done via the enum construct, which makes it much easier to switch from one screen to another:
+```
+typedef enum
+{
+    MENU,
+    WIKI,
+    PICK,
+    GAME,
+    TEST,
+    OVER
+} GameState;
+```
 
+Next comes a very long and crookedly done initialisation of photos, texts, sounds and objects, and of course all this should have been put out separately and more beautifully, but! I didn't do it :(
+
+Then again the declaration of variables for our character's animations and finally the algorithm for generating the background.  Initially we create a table, filling it with values that are later responsible for a certain colour:
+```
+int table[100][60] = { 0 };
+
+    for(int i = 0; i < 100; i += 4)
+    {
+        int temp = -2 + rand() % 4;
+        int effective_height = max_height + temp;
+        for(int j = 0; j < 60; j += 4)
+        {
+            int value = 1 + rand() % 4;
+
+            for (int bi = 0; bi < 4 && i + bi < 100; bi++)
+            {
+                for (int bj = 0; bj < 4 && j + bj < 60; bj++)
+                {
+                    if (j + bj < effective_height)
+                    {
+                        table[i + bi][j + bj] = 0;
+                    }
+                    else
+                    {
+                        table[i + bi][j + bj] = value;
+                    }
+                }
+            }
+        }
+    }
+```
+
+Once the game loop starts, we just handle some keystroke events moving the player, changing and scrolling animations.
+Then, depending on the player's action, we initialise our variables indicating running, standing, attacking or whatever, so that we can understand what animation we should include. 
+
+Then we clear the window and start displaying our windows, which are stored in our enum, via switch. Then we play the desired animation, and the cycle repeats while we play.
+
+Then we clear all arrays, because in SDL it is not done automatically )).
 ---
 ## Setup
 Just download the recent release
