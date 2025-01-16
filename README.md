@@ -104,6 +104,56 @@ Then, depending on the player's action, we initialise our variables indicating r
 Then we clear the window and start displaying our windows, which are stored in our enum, via switch. Then we play the desired animation, and the cycle repeats while we play.
 
 Then we clear all arrays, because in SDL it is not done automatically )).
+Now about the file handler_of_screen.c,
+function that draws the background, we divide the whole screen into small squares, which, depending on the value in the table, we fill with a certain colour. 
+The most important, the function that loads textures into the array, we run through all the frames of the animation, trying to load the file and convert it into a texture that we can already show:
+```
+int loadTextureArray(SDL_Renderer* renderer, const char** fileNames, int arraySize, SDL_Texture** textureArray)
+{
+    for(int i = 0; i < arraySize; i++)
+    {
+        SDL_Surface* surface = SDL_LoadBMP(fileNames[i]);
+        if (surface == NULL)
+        {
+            printf("Error loading image %d: %s\n", i, SDL_GetError());
+            SDL_DestroyRenderer(renderer);
+            return 1;
+        }
+        textureArray[i] = SDL_CreateTextureFromSurface(renderer, surface);
+        SDL_FreeSurface(surface);
+        if (textureArray[i] == NULL)
+        {
+            printf("Error creating texture for image %d: %s\n", i, SDL_GetError());
+            SDL_DestroyRenderer(renderer);
+            return 1;
+        }
+    }
+    return 0;
+}
+```
+Next are the functions of drawing different screens, there is nothing unusual there, at the end we have a function that checks the intersection of two objects:
+```
+int is_intersects(SDL_Rect rect1, SDL_Rect rect2, int pick)
+{
+    if (pick == 0)
+    {
+        if (rect2.x >= rect1.x - 130 && rect2.x <= rect1.x)
+        {
+            return 1;
+        }
+    }
+    else if(pick == 1)
+    {
+        if(rect2.x >= rect1.x && rect2.x <= rect1.x + 140)
+        {
+            return 1;
+        }
+    }
+    return 0;
+}
+```
+All in all, this is an ending
+
 ---
 ## Setup
 Just download the recent release
